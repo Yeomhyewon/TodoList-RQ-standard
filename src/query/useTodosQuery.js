@@ -1,4 +1,6 @@
-// import { QueryClient, useMutation } from "react-query";
-// import { addTodo, removeTodo, switchTodo } from "../api/todos";
+import { useMutation } from "react-query";
+import { addTodo, removeTodo, switchTodo } from "../api/todos";
 
-// export const addTodomutation = useMutation(addTodo);
+export const useAddTodoMutation = () => useMutation(addTodo);
+export const useRemoveMutation = () => useMutation(removeTodo);
+export const useSwitchMutation = () => useMutation(switchTodo);
